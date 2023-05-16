@@ -1,0 +1,21 @@
+{
+  "name": "desktopapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "bin": "index.js",
+  "pkg": {
+    "targets": [
+      "node18"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^24.3.0"
+  }
+}

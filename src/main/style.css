@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(24, 39, 87);
+}
+
+.startDisplay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startDisplay h2 {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-size: 20px;
+    transform: translate(-50%);
+    color: white;
+}
+
+.startDisplay button {
+    position: relative;
+    padding: 5%;
+    font-size: 100%;
+    background-color: red;
+    border-radius: 2vw;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.gameDisplay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    display: none;
+}
+
+.gameDisplay .itemBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.boxToClick {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background-color: red;
+    animation: identifier 1.9s;
+}
+
+@keyframes identifier {
+    0% {
+        width: 20%;
+        height: 20%;
+    }50%{
+        width: 120%;
+        height: 120%;
+    }100%{
+        width: 50%;
+        height: 50%;
+    }
+}
